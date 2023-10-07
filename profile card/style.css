@@ -1,0 +1,114 @@
+/*GOOGLE Fonts - poppins */
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@1,600&family=Inter:wght@200;300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F1EFEF;
+
+}
+.profile-card{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    max-width: 370px;
+    width: 100%;
+    background: #fff;
+    border-radius: 24px;
+  padding: 25px;
+    box-shadow: 0 5px 10pc rgba(0, 0, 0, 0);
+position: relative;
+}
+.profile-card::before{
+    content: "";
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    top: 0;
+    left: o;
+    background-color:#64CCC5 ;
+    border-radius:24px 24px o o ;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #64CCC5;
+    padding: 4px;
+    margin-bottom: 10px;
+ 
+}
+.image.pictures.jpg{
+    height:100% ;
+    width:100% ;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+
+
+.profile-card .text-data{
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    color:#333  ;
+
+}
+.text-data .name{
+    font-size:22px;
+    font-weight: 500;
+}
+.text-data .job{
+    font-size:15px;
+    font-weight: 400;
+}
+.profile-card .media-buttons{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+.media-buttons .link{
+    display: flex;
+    margin: 2px 8px;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 10px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    text-decoration: none;
+    background-color: #CDFAD5;
+
+}
+.profile-card .buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+
+}
+.buttons .button{
+    background-color: #35A29F;
+    font-weight: 400;
+    font-size: 14px;
+    border: none;
+    border-radius: 24px;
+    margin: 8px;
+    padding: 8px 24px;
+    color: #fff;
+    cursor: pointer;
+
+}
+.button .button :hover{
+    background-color: #0e4bf1;
+
+}
